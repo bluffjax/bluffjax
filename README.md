@@ -27,9 +27,22 @@
 </tr>
 </table>
 
+| ID | Description |
+|----|-------------|
+| `kuhn_poker` | Kuhn Poker (2-player, 3-card deck) |
+| `leduc_holdem` | Leduc Hold'em (2-player, 6-card deck) |
+| `goofspiel` | Goofspiel / Game of Pure Strategy |
+| `kemps` | Kemps (4-player partnership) |
+| `bluff` | Bluff / Cheat card game |
+| `five_card_draw` | 5-Card Draw poker |
+| `seven_card_stud` | 7-Card Stud poker |
+| `texas_limit_holdem` | Texas Limit Hold'em |
+| `texas_nolimit_holdem` | Texas No-Limit Hold'em |
+| `werewolf` | Werewolf (Mafia) social deduction |
+
 ## Environment Types
 
-- **AEC (Agent-Environment-Cycle)**: Turn-based; `obs` and `action` are for the current player only. Used by Kuhn, Leduc, Bluff, poker variants, Werewolf.
+- **AEC (Agent-Environment-Cycle)**: Turn-based; `obs` and `action` are for the current player only. Used by Kuhn, Leduc, Bluff, Poker variants, Werewolf.
 - **Parallel**: Simultaneous moves; `obs` and `action` have shape `(num_agents, ...)`. Used by Goofspiel, Kemps.
 
 ## Installation
@@ -97,19 +110,7 @@ def random_rollout(key, env, max_steps=100):
 states, obs, rewards, dones = random_rollout(key, env)
 ```
 
-## Available Environments
 
-| ID | Description |
-|----|-------------|
-| `kuhn_poker` | Kuhn Poker (2-player, 3-card deck) |
-| `leduc_holdem` | Leduc Hold'em (2-player, 6-card deck) |
-| `goofspiel` | Goofspiel / Game of Pure Strategy |
-| `kemps` | Kemps (4-player partnership) |
-| `bluff` | Bluff / Cheat card game |
-| `five_card_draw` | 5-Card Draw poker |
-| `seven_card_stud` | 7-Card Stud poker |
-| `texas_limit_holdem` | Texas Limit Hold'em |
-| `texas_nolimit_holdem` | Texas No-Limit Hold'em |
-| `werewolf` | Werewolf (Mafia) social deduction |
+
 
 
