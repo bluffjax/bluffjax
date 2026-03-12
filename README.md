@@ -43,12 +43,18 @@ pip install -e .
 ## Requirements
 python >= 3.12
 
-distrax==0.1.7 
-jax==0.7.2 
-jaxtyping==0.3.5 
-optax==0.2.6 
-flax==0.12.0 
-omegaconf==2.3.0 
+
+distrax==0.1.7
+
+jax==0.7.2
+
+jaxtyping==0.3.5
+
+optax==0.2.6
+
+flax==0.12.0
+
+omegaconf==2.3.0
 
 To test bluffjax in a new conda environment with the required libraries:
 
