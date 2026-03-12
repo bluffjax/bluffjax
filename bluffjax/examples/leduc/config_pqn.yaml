@@ -1,0 +1,24 @@
+num_timesteps: 1e7
+num_envs: 1024
+num_steps_per_env_per_update: 64
+num_epochs: 2
+num_minibatches: 2
+
+lr: 2.5e-4
+start_e: 1.0
+end_e: 0.05
+exploration_fraction: 0.4
+q_lambda: 1.0
+max_grad_norm: 0.5
+gamma: 1.0
+fc_dim_size: 64
+
+env_name: leduc_poker
+seed: 0
+num_seeds: 5
+env_kwargs: {}
+
+# wandb
+project: bluffjax
+job_type: leduc_pqn
+wandb: True

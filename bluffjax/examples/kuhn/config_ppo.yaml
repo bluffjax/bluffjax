@@ -1,0 +1,26 @@
+num_timesteps: 1e7 # 1e7
+num_envs: 20 # 10
+num_steps_per_env_per_update: 1000 #1000
+num_epochs: 4
+num_minibatches: 4
+lr: 3e-5
+anneal_lr: True
+gamma: 1.0
+gae_lambda: 1.0
+clip_eps: 0.2
+vf_clip: 0.2
+ent_coef: 0.00 # 0.01
+vf_coef: 1.0
+max_grad_norm: 0.1
+fc_dim_size: 64
+optimizer: adam
+
+env_name: kuhn_poker
+seed: 0
+num_seeds: 5
+env_kwargs: {}
+
+# wandb
+project: kuhn
+job_type: ppo
+wandb: True # True, False

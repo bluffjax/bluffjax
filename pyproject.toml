@@ -1,0 +1,12 @@
+[project]
+name = "bluffjax"
+version = "1.0.0"
+description = "A suite of adversarial imperfect information games for reinforcement learning research."
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools.packages.find]
+include = ["bluffjax"]
